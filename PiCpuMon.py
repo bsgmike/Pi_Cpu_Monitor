@@ -26,6 +26,8 @@ from PIL.ImageQt import ImageQt
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 from matplotlib.figure import Figure
 import matplotlib.pyplot as plt
+from gpiozero import CPUTemperature
+
 
 
 class MplCanvas(FigureCanvas):
@@ -141,11 +143,11 @@ class PiCpuWidget(QWidget):
         self.topLevelLayout.addWidget(self.graphcanvas)
         self.setLayout(self.topLevelLayout)
 
-        n_data = 50
-        self.xdata = list(range(n_data))
-        fred = psutil.virtual_memory()
-        self.ydata = [fred.used for i in range(n_data)]
-        self._plot_ref = None
+        # n_data = 50
+        # self.xdata = list(range(n_data))
+        # fred = psutil.virtual_memory()
+        # self.ydata = [fred.used for i in range(n_data)]
+        # self._plot_ref = None
 
 
         self.pandasdf = dataFrame()
@@ -162,10 +164,10 @@ class PiCpuWidget(QWidget):
 
     def update_plot(self):
         print("update graph")
-        fred = psutil.virtual_memory()
-        self.ydata = self.ydata[1:] + [fred.used,]
-
-        pandasItem = dataItem(fred.used)
+        # fred = psutil.virtual_memory()
+        # self.ydata = self.ydata[1:] + [fred.used,]
+        cpuData = CPUTemperature()
+        pandasItem = dataItem(cpuData.temperature)
         self.pandasdf.append(pandasItem)
         # print(self.pandasdf.get())
 
@@ -184,14 +186,16 @@ class PiCpuWidget(QWidget):
         self.canvas.draw()
 
     def pdPlot(self):
-        print('pdPlot')
-        fred = psutil.virtual_memory()
-        pandasItem = dataItem(fred.used)
+        # print('pdPlot')
+        # fred = psutil.virtual_memory()
+        cpuData = CPUTemperature()
+        print(str(cpuData.temperature))
+        pandasItem = dataItem(cpuData.temperature)
         self.pandasdf.append(pandasItem)
         self.graphfigure.clear()
         ax = self.graphfigure.add_subplot(111)
         df = self.pandasdf.get()
-        print(df.shape[0])
+        # print(df.shape[0])
 
         if df is not None:
             df.plot(x='timestamp', y='data', ax=ax)
