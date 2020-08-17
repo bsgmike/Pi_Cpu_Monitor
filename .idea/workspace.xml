@@ -57,9 +57,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
               <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding>
-                <element signature="e#49#72#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -137,6 +134,11 @@
             <path>
               <item name="Pi_Cpu_Monitor" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pi_Cpu_Monitor" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pi_Cpu_Monitor" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pi_Cpu_Monitor" type="462c0819:PsiDirectoryNode" />
               <item name="icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -151,6 +153,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MRB\python_proj\Pi_Cpu_Monitor\fonts" />
       <recent name="D:\MRB\python_proj\Pi_Cpu_Monitor\icons" />
     </key>
   </component>
@@ -239,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597672170497</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added pimon plus a raspberry pi icon">
+      <created>1597672437006</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597672437007</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -416,9 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-          <folding>
-            <element signature="e#49#72#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 # --------------Driver Library-----------------#
 import RPi.GPIO as GPIO
-import examples/OLED_Driver as OLED
+import examples.OLED_Driver as OLED
 # --------------Image Library---------------#
 from PIL import Image
 from PIL import ImageDraw
