@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e3ed133-7d31-40a2-9975-e2304843f9b5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Pi_Cpu_Monitor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pi_Cpu_Monitor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4e3ed133-7d31-40a2-9975-e2304843f9b5" name="Default Changelist" comment="added pimon plus a raspberry pi icon">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PiCpuMon.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PiCpuMon.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PiCpuMon.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
@@ -50,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pimon.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pimon.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pimon.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1363">
@@ -147,6 +145,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MRB\python_proj\Pi_Cpu_Monitor\icons" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -218,10 +221,19 @@
       <option name="presentableId" value="Default" />
       <updated>1596798172580</updated>
     </task>
+    <task id="LOCAL-00001" summary="added pimon plus a raspberry pi icon">
+      <created>1597671919641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597671919641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="683" y="160" width="1936" height="1066" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -251,6 +263,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added pimon plus a raspberry pi icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pimon plus a raspberry pi icon" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -352,16 +368,6 @@
     </entry>
     <entry file="file:///usr/local/lib/python3.7/dist-packages/Adafruit_DHT/Beaglebone_Black.py" />
     <entry file="file:///usr/local/lib/python3.7/dist-packages/Adafruit_DHT/common.py" />
-    <entry file="file://$PROJECT_DIR$/PiCpuMon.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="202" column="25" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
-          <folding>
-            <element signature="e#945#955#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/DHT22_tester.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -379,12 +385,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/icons/raspberry_1.bmp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pimon.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1363">
           <caret line="118" selection-start-line="118" selection-end-line="118" />
           <folding>
             <element signature="e#48#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PiCpuMon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="202" column="25" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="25" />
+          <folding>
+            <element signature="e#945#955#0" expanded="true" />
           </folding>
         </state>
       </provider>
