@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e3ed133-7d31-40a2-9975-e2304843f9b5" name="Default Changelist" comment="added pimon plus a raspberry pi icon">
+    <list default="true" id="4e3ed133-7d31-40a2-9975-e2304843f9b5" name="Default Changelist" comment="bug fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pimon.py" beforeDir="false" afterPath="$PROJECT_DIR$/pimon.py" afterDir="false" />
     </list>
@@ -55,8 +55,11 @@
       <file leaf-file-name="pimon.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pimon.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="550">
+              <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+              <folding>
+                <element signature="e#49#72#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -105,8 +108,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="683" />
-    <option name="y" value="160" />
+    <option name="x" value="762" />
+    <option name="y" value="177" />
     <option name="width" value="1936" />
     <option name="height" value="1066" />
   </component>
@@ -249,11 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1597672437007</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="bug fixes">
+      <created>1597672954862</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1597672954863</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="683" y="160" width="1936" height="1066" extended-state="0" />
+    <frame x="762" y="177" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
@@ -287,7 +297,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added pimon plus a raspberry pi icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="added pimon plus a raspberry pi icon" />
+    <MESSAGE value="bug fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -424,8 +435,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pimon.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        <state relative-caret-position="550">
+          <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+          <folding>
+            <element signature="e#49#72#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -51,9 +51,9 @@ def Time_test():
     # font_12 = ImageFont.truetype('cambriab.ttf', 12)
     # font_acme = ImageFont.truetype('Baloo-Regular.ttf', 36)
     # font_jetbrains = ImageFont.truetype('JetBrainsMono-Regular.ttf', 24)
-    font_saxmono = ImageFont.truetype('saxmono.ttf', 16)
-    font_clock = ImageFont.truetype('saxmono.ttf', 24)
-    font_temperature = ImageFont.truetype('saxmono.ttf', 24)
+    font_saxmono = ImageFont.truetype('fonts/saxmono.ttf', 16)
+    font_clock = ImageFont.truetype('fonts/saxmono.ttf', 24)
+    font_temperature = ImageFont.truetype('fonts/saxmono.ttf', 24)
 
     draw.text((0, 12), 'Mikes Clock', fill="BLUE", font=font_saxmono)
     draw.text((0, 30), time, fill="YELLOW", font=font_clock)
