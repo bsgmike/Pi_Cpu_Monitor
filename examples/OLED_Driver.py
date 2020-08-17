@@ -329,6 +329,7 @@ def Draw_FastVLine(x, y, length):
     for i in range(0,length):
         Write_Datas(color_byte)
 
+
 def Display_Image(Image):
     if(Image == None):
         return
