@@ -13,7 +13,7 @@ from PIL import ImageColor
 def Test_Text():
     image = Image.new("RGB", (OLED.SSD1351_WIDTH, OLED.SSD1351_HEIGHT), "BLACK")
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype('cambriab.ttf',24)
+    font = ImageFont.truetype('saxmono.ttf',24)
 
     draw.text((0, 12), 'WaveShare', fill = "BLUE", font = font)
     draw.text((0, 36), 'Electronic', fill = "BLUE",font = font)

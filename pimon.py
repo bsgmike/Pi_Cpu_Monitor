@@ -61,7 +61,8 @@ def Time_test():
     if room_temp is not None:
         draw.text((0, 65), room_temp, fill="ORANGE", font=font_temperature)
     print(time)
-    image = Image.open('icons/raspberry_1.bmp')
+    pilogo = Image.open('icons/raspberry_1.bmp')
+    draw.bitmap([0,0,60,60],pilogo)
     OLED.Display_Image(image)
 
 
