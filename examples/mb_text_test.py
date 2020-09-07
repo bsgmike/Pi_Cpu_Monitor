@@ -10,13 +10,11 @@ import time
 from gpiozero import CPUTemperature
 import board
 import adafruit_dht
- 
-
-
-
-
-
 from PIL import ImageColor
+import os
+from inspect import getsourcefile
+from os.path import abspath
+
 #-------------Test Display Functions---------------#
 
 def Test_Text():
@@ -37,26 +35,19 @@ def Test_Text():
 def Time_test():
 
     fred = datetime.datetime.now()
-    # fred =time.time()
-    # hms = time.strftime('%H:%M:%S', fred)
     time = fred.strftime("%H:%M:%S")
     cpuData = CPUTemperature()
     print("{0:.1f}".format(cpuData.temperature))
     temperature = "{0:.1f}".format(cpuData.temperature)
-    # temperature = str(cpuData.temperature)
-    # print(temperature)
     room_temp = roomtemperature()
     print("Time_test received ", room_temp)
 
     image = Image.new("RGB", (OLED.SSD1351_WIDTH, OLED.SSD1351_HEIGHT), "BLACK")
     draw = ImageDraw.Draw(image)
-    #font = ImageFont.truetype('cambriab.ttf',24)
-    #font_12 = ImageFont.truetype('cambriab.ttf', 12)
-    #font_acme = ImageFont.truetype('Baloo-Regular.ttf', 36)
-    #font_jetbrains = ImageFont.truetype('JetBrainsMono-Regular.ttf', 24)
-    font_saxmono = ImageFont.truetype('saxmono.ttf', 16)
-    font_clock = ImageFont.truetype('saxmono.ttf', 24)
-    font_temperature = ImageFont.truetype('saxmono.ttf', 24)
+
+    font_saxmono = ImageFont.truetype(os.path.join(app_dir,'saxmono.ttf'), 16)
+    font_clock = font_saxmono
+    font_temperature = font_saxmono
 
 
     draw.text((0, 12), 'Mikes Clock', fill="BLUE", font=font_saxmono)
@@ -93,6 +84,11 @@ def roomtemperature():
 
 # Initial the dht device, with data pin connected to:
 dhtDevice = adafruit_dht.DHT11(board.D23)
+app_dir = os.getcwd()
+this_file = abspath(getsourcefile(lambda:0))
+app_dir = os.path.dirname(this_file)
+
+print("The app folder is ", app_dir)
 # ----------------------MAIN-------------------------#
 try:
 

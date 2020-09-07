@@ -65,7 +65,13 @@ def Time_test():
     draw.bitmap([0,0,60,60],pilogo)
     OLED.Display_Image(image)
 
-
+def background_test():
+    print("Display a picture")
+    image = Image.open("icons/bg_1.bmp")
+    draw = ImageDraw.Draw(image)
+    font_saxmono = ImageFont.truetype('fonts/saxmono.ttf', 16)
+    draw.text((0, 12), 'Mikes Clock', fill="BLUE", font=font_saxmono)
+    OLED.Display_Image(image)
 
 def roomtemperature():
     try:
@@ -100,13 +106,13 @@ try:
 
         # -------------OLED Init------------#
         OLED.Device_Init()
-
+        time.sleep(2)
         # Test_Text()
-        Time_test()
+        #Time_test()
 
         while (True):
-            Time_test()
-
+            #Time_test()
+            background_test()
             time.sleep(2)
             # pass
 
